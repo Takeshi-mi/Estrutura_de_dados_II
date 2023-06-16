@@ -31,13 +31,16 @@ public class Principal {
         grafo.adicionarAresta(7, "D", "F");
         grafo.adicionarAresta(8, "E", "F");
         
-//        System.out.println("Busca em Largura: ");
-//        grafo.buscaEmLargura();
-//        System.out.println("=================");
-//        System.out.println("Matriz em Adjacencia");
-//        grafo.gerarMatrizAdjacencia();
-//        System.out.println("=================");
-//        
+        System.out.println("Busca em Largura: ");
+        grafo.buscaEmLargura();
+        System.out.println("=================");
+        System.out.println("Matriz em Adjacencia");
+        grafo.gerarMatrizAdjacencia();
+        System.out.println("=================");
+        
+          System.out.println("\nBusca em profundidade");
+          grafo.buscaEmProfundidade();
+          
 //        System.out.println("Dijkstra:");
 //        Dijkstra dij = new Dijkstra();
 //        dij.processaCaminho(grafo.getVertice("A")); // chamando
@@ -58,6 +61,7 @@ public class Principal {
           BellmanFord bf = new BellmanFord(grafo.vertices,grafo.arestas);
           bf.menorCaminho(grafo.getVertice("A"), grafo.getVertice("F"));
           
+
     }   
     
 }
