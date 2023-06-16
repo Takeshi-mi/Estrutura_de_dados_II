@@ -74,9 +74,9 @@ public class Grafos {
            }
            fila.remove(0);
        }
-       
-       
    }
+ 
+
    public int[][] gerarMatrizAdjacencia()
    {
        int[][] matriz =  new int[vertices.size()][vertices.size()];
@@ -100,10 +100,6 @@ public class Grafos {
                }
            }
        }
-       
-       
-       
-       
        for(int i=0;i<vertices.size();i++)
        {
            for(int j=0;j<vertices.size();j++)
@@ -112,8 +108,6 @@ public class Grafos {
            }
            System.out.println("");
        }
-       
        return matriz;
    }
-    
 }
