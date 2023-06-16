@@ -76,23 +76,7 @@ public class Grafos {
            fila.remove(0);
        }
    }
-//    public void buscaEmProfundidade() {
-//    ArrayList<Vertice> visitados = new ArrayList<Vertice>();
-//    Vertice atual = this.vertices.get(0);
-//    dfs(atual, visitados);
-//}
-//
-//    private void dfs(Vertice vertice, ArrayList<Vertice> visitados) {
-//        visitados.add(vertice);
-//        System.out.println(vertice.getDados());
-//
-//        for (Aresta aresta : vertice.getArestaSaida()) {
-//            Vertice proximo = aresta.getFim();
-//            if (!visitados.contains(proximo)) {
-//                dfs(proximo, visitados);
-//            }
-//        }
-//    }
+
     public void buscaEmProfundidade() {
     ArrayList<Vertice> visitados = new ArrayList<>();
     Stack<Vertice> pilha = new Stack<>();
